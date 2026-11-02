@@ -1,0 +1,37 @@
+#--------------------------------------------------------------------
+# Salin file ini menjadi `.env` lalu sesuaikan nilainya.
+#--------------------------------------------------------------------
+
+CI_ENVIRONMENT = development
+
+#--------------------------------------------------------------------
+# APP
+#--------------------------------------------------------------------
+
+app.baseURL = 'http://localhost:8080/'
+app.forceGlobalSecureRequests = false
+app.CSRFProtection = 'cookie'
+app.CSRFTokenName = 'csrf_token'
+app.CSRFCookieName = 'csrf_cookie'
+app.CSRFExpire = 7200
+app.CSRFRegenerate = true
+
+#--------------------------------------------------------------------
+# DATABASE (MySQL 8.0+)
+#--------------------------------------------------------------------
+
+database.default.hostname = localhost
+database.default.database = lapor_aspirasi
+database.default.username = root
+database.default.password =
+database.default.DBDriver = MySQLi
+database.default.DBPrefix =
+database.default.port = 3306
+database.default.charset = utf8mb4
+database.default.DBCollat = utf8mb4_unicode_ci
+
+#--------------------------------------------------------------------
+# ENCRYPTION (jalankan: php spark key:generate)
+#--------------------------------------------------------------------
+
+encryption.key =
